@@ -1,0 +1,185 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    font-family: helvetica;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size:3.6rem;
+}
+
+li, button, label, input, p, td, select {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: #009dc4;
+    padding: 1.7rem 4rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: #007491;
+}
+
+/* Nav Section */
+.main-header {
+    background: #009dc4;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+    min-height: 10vh;
+    flex-wrap: wrap;
+    
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+}
+
+#logo {
+    flex: 2 1 40rem;
+    padding-left: 2rem;
+}
+
+/* Register, Login Page Account*/
+
+#register, #login, #account, #access-history, #admin {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-wrapper {
+    padding: 2rem;
+    width: 50%;
+    background: #dfdfdf;
+    border-radius: 15px;
+}
+.form-head {
+    text-align: center;
+    padding: 2rem 0rem 4rem 0rem;
+}
+
+.form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-wrapper button {
+    display: flex;
+    justify-content: left;
+}
+
+.form-wrapper td {
+    padding-right: 4rem;
+    padding-bottom: 2.3rem;
+}
+
+.form-wrapper input, .form-wrapper select {
+    padding: 0.2rem;
+}
+
+.form-wrapper .error-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: red;
+}
+
+.form-wrapper .success-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: green;
+}
+
+.form-wrapper .error-message p, .form-wrapper .success-message p {
+    padding: 0.1rem;
+}
+
+#access-button {
+    padding-top: 4rem;
+}
+
+#search-label, #search-button, #access-form {
+    padding: 1rem;
+}
+
+/* register success login success, logout, logout-success pages */
+#register-success, #login-success, #logout, #logout-success {
+    display:flex;
+    min-height: 80vh;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+.head-wrapper {
+    padding: 2rem;
+}
+
+.content p {
+    padding: 2rem;
+    
+}
+
+.content p a {
+    text-decoration: blue underline;
+    color: blue;
+    
+}
+
+.content p a:visited {
+    text-decoration: purple underline;
+    color: purple;
+}
+
+.content form {
+    align-items: center;
+    padding: 1rem;
+}
