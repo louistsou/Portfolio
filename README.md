@@ -1,7 +1,7 @@
 Hi, My name is Louis Tsou
 ===========================
 
-Here are two projects I worked on during my Uni studies: a YouTube video converter written in Python and a meal selection app written in Swift.
+Here are three projects I worked on during my Uni studies: a YouTube video converter written in Python, a meal selection app written in Swift and a Website for purchasing goods wriiten in Java.
 
 *   🌍  I'm based in Sydney
 *   ✉️  You can contact me at [louis6251@gmail.com](mailto:louis6251@gmail.com)
