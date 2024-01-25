@@ -1,0 +1,31 @@
+# Python package
+# Create and test a Python package on multiple Python versions.
+# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+
+trigger:
+- main
+
+pool:
+  vmImage: windows-latest
+strategy:
+  matrix:
+    Python37:
+      python.version: '3.10'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(python.version)'
+  displayName: 'Use Python $(python.version)'
+
+- script: |
+    pip install customtkinter
+    pip install youtube-search-python
+    pip install pillow
+    pip install cryptography
+    pip install python-vlc
+  displayName: 'Install dependencies'
+
+- script: python azure_test.py
+  displayName: 'Running azure test'
